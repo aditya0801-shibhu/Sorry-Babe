@@ -2,40 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>I'm Really Sorry ❤️</title>
+  <title>Sorry My Love ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="card">
-    <h1>I'm Sorry ❤️</h1>
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<!-- Falling Hearts -->
+<div class="hearts"></div>
+
+<div class="envelope" onclick="openLetter()">
+  <div class="flap"></div>
+
+  <div class="letter">
+    <h1>Sorry My Love Jannu ❤️</h1>
     <div class="heart">💗</div>
 
-    <p>
-      I Know I Made A Mistake And I Hurt You…  
-      That Was Never My Intention 🥺  
-      Please Forgive Me, Because You Truly Mean The World To Me.
-    </p>
+    <!-- Typewriter text -->
+    <p id="typeText"></p>
 
     <div class="photos">
-      <img src="photo1.jpg" alt="Memory 1">
-      <img src="photo2.jpg" alt="Memory 2">
-      <img src="photo3.jpg" alt="Memory 3">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
     </div>
 
-    <button onclick="showMessage()">Forgive Me? 💕</button>
+    <h3 class="question">Will you forgive me? 🥺</h3>
 
-    <div class="popup" id="popup">
-      I Promise To Never Repeat My Mistake   
-      I Love You More Than Words Can Say 💖
+    <div class="buttons">
+      <button class="yes" onclick="forgiveYes(event)">YES 💖</button>
+      <button class="no" onclick="forgiveNo(event)">NO 💔</button>
     </div>
+
+    <div class="popup" id="popup"></div>
   </div>
+</div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
